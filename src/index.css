@@ -1,0 +1,31 @@
+html, body, #app, #app >div {
+  height: 100%;
+}
+
+body > #root > div {
+  max-height: 100vh;
+}
+
+.full-page {
+  height: 100vh !important;
+}
+
+
+body {
+  overflow: hidden;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*background:linear-gradient( var(--nearBlackBG) 80%, var(--secondaryBG));*/
+  background-attachment: fixed; /*edit*/
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+select::-webkit-scrollbar {
+  display: none;
+}
+
