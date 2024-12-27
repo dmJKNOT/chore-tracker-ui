@@ -1,6 +1,13 @@
 import React from 'react';
 import './App.css';
 import {Route, Routes} from "react-router-dom";
+import {MainMenuPage} from "./pages/MainMenuPage";
+import {UsersPage} from "./pages/UsersPage";
+import {UserBreakdown} from "./pages/UserBreakdown";
+import {ChoresPage} from "./pages/ChoresPage";
+import {ChoreForm} from "./components/ChoreForm";
+import {UserForm} from "./pages/UserForm";
+import {NewChorePage} from "./pages/NewChorePage";
 
 
 interface UnimplementedPageProps {
@@ -13,9 +20,18 @@ export function UnimplementedPage(props: UnimplementedPageProps) {
 function App() {
 
   return (
-        <div id="app" className="App">
+        <div id="app" className="center-app">
             <Routes>
-                <Route path="/" element={ <WelcomePage/> } />
+                <Route path="/" element={<MainMenuPage/>} />
+
+                <Route path="/users" element={<UsersPage/>}/>
+                <Route path="/chores" element={<ChoresPage/>}/>
+
+                <Route path="/users/breakdown" element={<UserBreakdown/>}/>
+
+
+                <Route path="/chores/chore-form" element={<NewChorePage/>}/>
+                <Route path="/users/user-form" element={<UserForm/>}/>
             </Routes>
         </div>
   );
@@ -23,8 +39,8 @@ function App() {
 export default App;
 
 
-function WelcomePage() {
-    return (
-        <div>WELCOME PAGE</div>
-    );
-}
+// export function WelcomePage() {
+//     return (
+//         <div>WELCOME</div>
+//     );
+// }

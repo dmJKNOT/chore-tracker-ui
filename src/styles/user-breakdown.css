@@ -1,0 +1,15 @@
+
+.user-breakdown-page-container {
+    margin-left: 45px;
+}
+
+.breakdown-section-container {
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 50vh;
+}
+
+.chore-row {
+    display: flex;
+
+}

@@ -1,13 +1,18 @@
 body {
   width: 100%;
-  /*background-color: black;*/
+  background-color: #59c6c6;
   /*background: radial-gradient(#002, #000);*/
   /*color: var(--shipwake_selected);*/
 }
 
-/*.App {*/
-/*  text-align: center;*/
-/*}*/
+.center-app {
+
+  /*text-align: center;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .App-logo {
   pointer-events: none;
@@ -22,9 +27,7 @@ body {
 .App-header {
   min-height: 100vh;
   display: flex;
-  /*flex-direction: column;*/
-  /*align-items: center;*/
-  /*justify-content: center;*/
+
   /*font-size: calc(10px + 2vmin);*/
 }
 

@@ -1,0 +1,31 @@
+
+
+.home-button {
+    position: absolute;
+    top: 32px;
+    left: 50px;
+}
+
+.menu-button {
+    border-radius: 5px;
+    height: 96px;
+    width: 264px;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.purple-background {
+    background: #a724d3
+}
+
+.red-background {
+    background: #d3243f
+}
+
+.green-background {
+    background: #24d370
+}
+
+.blue-background {
+    background: #24a4d3
+}
